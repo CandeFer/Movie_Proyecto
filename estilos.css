@@ -102,7 +102,7 @@ main {
     .banner {
         width: 100%;
         height: 100vh;
-        background-image: url(./cine2.jpg);
+        background-image: url(./Cine_Opaco.jpg);
         background-repeat: no-repeat;
         background-size: cover;
 
@@ -119,16 +119,12 @@ main {
                 padding: 10px 20px;
             }
 
-            .titulo2 {
-                font-size: 50px;
+            .subtitulo {
                 color: white;
+                font-size: 30px;
             }
 
-            .titulo3 {
-                font-size: 50px;
-                color: white;
-                padding: 10px 20px;
-            }
+
 
             .registrate {
                 margin-top: 35px;
@@ -155,12 +151,13 @@ main {
         width: 100%;
         height: 65vh;
 
+
         h2 {
             margin-bottom: 32px;
-          font-size: 50px;
+            font-size: 50px;
         }
 
-      
+
 
         .inputs {
             width: 80%;
@@ -187,6 +184,87 @@ main {
                 font-weight: 700;
             }
         }
+    }
+
+    .Peliculas {
+        width: 100%;
+        background-color: #171419;
+        height: 230vh;
+
+        h2 {
+            font-size: 40px;
+        }
+
+        .peliculas-contenedor {
+            margin-top: 40px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            flex-wrap: wrap;
+
+            .pelicula {
+                width: 200px;
+                height: 300px;
+                border-radius: 10px;
+                overflow: hidden;
+
+                margin: 10px 20px;
+
+                img {
+                    width: 100%;
+                }
+            }
+        }
+
+        .botones {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            margin-top: 20px;
+
+            .btn-pag {
+                margin: 0 30px;
+                max-width: 150px;
+                min-width: 100px;
+                background-color: maroon;
+                color: #ffffff;
+                font-weight: 600;
+                padding: 10px 20px;
+                text-decoration: none;
+                border: none;
+                border-radius: 5px;
+                box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+
+            }
+        }
+
+
+        .recomendaciones{
+            margin-top: 40px;
+            background-color: #171419;
+            width: 100%;
+            height: 200vh;
+        
+            .recomendaciones-contenedor{
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+        
+                .peli-recom{
+                    width: 200px;
+                    height: 300px;
+                    border-radius: 10px;
+                    overflow: hidden;
+        
+                    margin: 10px 20px;
+        
+                    img {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+
     }
 
 
@@ -249,10 +327,14 @@ footer {
     .main {
         .banner {
             height: 80vh;
+
             .textos {
-              h1,h2,h3{
-                font-size: 30px;
-              }
+
+                h1,
+                h2,
+                h3 {
+                    font-size: 30px;
+                }
             }
         }
     }
@@ -263,7 +345,7 @@ footer {
 
 @media (max-width:410) {
 
-    .textos{
+    .textos {
         font-size: 20px;
     }
 }
